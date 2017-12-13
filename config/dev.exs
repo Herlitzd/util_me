@@ -10,9 +10,10 @@ config :util_me, UtilMeWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
-  check_origin: false
-  # watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin",
-  #                   cd: Path.expand("../assets", __DIR__)]]
+  check_origin: false,
+  watchers: [npm: ["run", "dev", cd: Path.expand("../view", __DIR__)]]
+  # watchers: [node: ["npm", "run", "watch",
+  #                   cd: Path.expand("../view", __DIR__)]]
 
 # ## SSL Support
 #
