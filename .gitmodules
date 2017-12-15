@@ -1,4 +1,0 @@
-[submodule "view"]
-	path = view
-	url = https://github.com/Herlitzd/util_me_vue
-	branch = master
