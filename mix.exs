@@ -43,7 +43,8 @@ defmodule UtilMe.Mixfile do
       {:cowboy, "~> 1.0"},
       {:httpoison, "~> 0.13"},
       {:poison, "~> 3.1"},
-      {:decimal, "~> 1.0"}
+      {:decimal, "~> 1.0"},
+      {:cors_plug, "~> 1.2"}
     ]
   end
 

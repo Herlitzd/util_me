@@ -20,7 +20,9 @@ defmodule UtilMeWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", UtilMeWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", UtilMeWeb do
+    pipe_through :api
+    post "/session/attempt", SessionController, :attempt
+    post "/session", SessionController, :login
+  end
 end

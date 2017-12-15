@@ -38,6 +38,7 @@ defmodule UtilMeWeb.Endpoint do
     key: "_util_me_key",
     signing_salt: "UiRJGBYe"
 
+  plug CORSPlug, origin: ["http://localhost:8080", "http://0.0.0.0:8080","http://127.0.0.1:8080"]
   plug UtilMeWeb.Router
 
   @doc """

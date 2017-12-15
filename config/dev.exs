@@ -7,11 +7,12 @@ use Mix.Config
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
 config :util_me, UtilMeWeb.Endpoint,
-  http: [port: 4000],
+  http: [ip: {127, 0, 0, 1},port: 4000],
   debug_errors: true,
   code_reloader: true,
-  check_origin: false,
-  watchers: [npm: ["run", "dev", cd: Path.expand("../view", __DIR__)]]
+  check_origin: false
+  # ,
+  # watchers: [npm: ["run", "dev", cd: Path.expand("../view", __DIR__)]]
   # watchers: [node: ["npm", "run", "watch",
   #                   cd: Path.expand("../view", __DIR__)]]
 
